@@ -1,0 +1,131 @@
+@media (max-width: 1280px) {
+    body {
+        padding: 0 40px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .topo .logo {
+        max-width: 300px;
+    }
+
+    .menu .link {
+        font-size: 22px;
+    }
+
+    .conteudo {
+        margin-top: 50px;
+        gap: 50px;
+    }
+
+    .informacoes .descricao,
+    .informacoes .foto {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        display: flex;
+    }
+
+    .informacoes .foto{
+        max-width: 450px;
+    }
+
+    .rodape {
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .topo .logo {
+        max-width: 350px;
+    }
+
+    .menu .link {
+        font-size: 22px;
+    }
+
+    .conteudo {
+        min-height: 70vh;
+        gap: 50px;
+    }
+
+    .informacoes .descricao,
+    .informacoes .foto {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        max-width: 350px;
+        display: flex;
+    }
+
+    .rodape {
+        text-align: center;
+    }
+}
+
+@media (max-width: 425px) {   
+    body {
+        padding: 40px;
+    }
+    .topo .logo {
+        max-width: 280px;    
+    }
+
+    .menu .link {
+        font-size: 18px;
+    }
+
+    .conteudo {
+        min-height: 70vh;
+        gap: 50px;
+    }
+
+    .informacoes .descricao,
+    .informacoes .foto {
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .informacoes .foto{
+        display: none;
+        margin-top: 300px;
+        bottom: auto;
+    }
+
+    .rodape {
+        text-align: center;
+    }
+}
+
+@media (max-width: 320px) {   
+    body {
+        padding: 40px;
+    }
+    .topo .logo {
+        max-width: 200px;
+    }
+
+    .menu .link {
+        font-size: 14px;
+    }
+
+    .conteudo {
+        min-height: 70vh;
+        gap: 50px;
+    }
+
+    .informacoes .descricao {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .informacoes .foto {
+        max-width: 250px;
+        display: none;
+    }
+
+    .rodape {
+        text-align: center;
+    }
+}

@@ -1,0 +1,164 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    max-width: 1280px;
+    margin: 0 auto;
+    background-color: #ffb6c1;
+}
+
+body .background {
+    position: fixed;
+    max-width: 100%;
+    left: 0;
+    z-index: -1;
+}
+
+body .box {
+    display: flex;
+    position: fixed;
+    top: 100px;
+    width: 1280px;
+    height: 760px;
+    padding: 50px;
+    background-color: #ffffff;
+    padding: 10px;
+    box-shadow: -50px 50px 100px 1px #7c5359;
+}
+
+header {
+    display: flex;
+    position: fixed;
+    max-width: 1280px;
+    padding: 115px;
+    margin-left: 600px;
+    gap: 10px;
+}
+
+header .icone-botao {
+    width: 26px;
+}
+
+header .menu {
+    background: none;
+    border: none;
+    width: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px;
+    font-size: 18px;
+}
+
+header .menu:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+header .modelo {
+    max-width: 382px;
+    display: flex;
+    position: fixed;
+    padding: 20px;
+    left: 320px;
+    opacity: 0.7;
+}
+
+header .logo {
+    max-width: 550px;
+    display: flex;
+    position: fixed;
+    padding: 20px;
+    top: 300px;
+    left: 450px;
+    border: 2px solid #0e0d0d;
+}
+
+header .circulo {
+    background-color: #fddbdf;
+    display: flex;
+    position: fixed;
+    width: 150px;
+    height: 150px;
+    top: 180px;
+    left: 1100px;
+    border-radius: 50%;
+}
+
+header .box-carrossel {
+    background-color: #fafafa;
+    display: flex;
+    position: fixed;
+    padding: 10px;
+    top: 250px;
+    left: 1150px;
+    width: 350px;
+    height: 450px;
+}
+
+header .imagem-carrossel {
+    object-fit: cover;
+    display: none;
+    animation: mudarImagem 0.7s;
+}
+
+header .imagem-carrossel.ativa {
+    display: block;
+}
+
+@keyframes mudarImagem {
+    from {
+        opacity: 0.85;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+header .botoes-carrossel {
+    display: flex;
+    position: fixed;
+    top: 710px;
+    left: 1230px;
+    gap: 15px;
+}
+
+header .botoes-carrossel .botao {
+    background-color: #ffb6c1;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    cursor: pointer;
+    border-color: #fafafa;
+    transition: 0.2s ease-in-out;
+}
+
+header .botoes-carrossel .botao:hover {
+    transform: scale(1.20);
+}
+
+header .botoes-carrossel .botao.selecionado {
+    background-color: #0e0d0d;
+}
+
+main .menu-lateral {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: fixed;
+    align-items: center;
+    min-height: 100vh;
+    top: 0;
+    right: 0;
+    width: 80px;
+    gap: 30px;
+}
+
+main .menu-lateral .icone {
+    width: 30px;
+    transition: 0.3s ease-in-out;
+}
+
+main .menu-lateral .icone:hover {
+    transform: scale(1.2);
+}
